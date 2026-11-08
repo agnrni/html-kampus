@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Perpustakaan Unindra</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <!-- KOTAK UTAMA -->
+    <fieldset>
+
+    <!-- KOP SURAT -->
+    <table align="center">
+        <tr>
+            <td>
+                <img src="logo.png" alt="Logo Kampus Unindra"
+                    width="100" height="100">
+            </td>
+            <td align="center">
+                <h1>
+                    PERPUSTAKAAN<br>
+                    Universitas Indraprasta PGRI
+                </h1>
+            </td>
+        </tr>
+    </table>
+
+        <hr>
+
+        <h2 align="center">Formulir Registrasi Anggota</h2>
+        <p><b>Isikan Data Diri Anda:</b></p>
+
+        <!-- FORM DATA DIRI -->
+        <form>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="nama" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jk"
+                               value="laki" required>Laki-laki
+                        <input type="radio" name="jk"
+                               value="perempuan">Perempuan
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tempat, Tanggal Lahir</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="ttl" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>NPM</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="npm" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Fakultas</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="fakultas"
+                               value="FTMIPA" required>FTMIPA
+                        <input type="radio" name="fakultas"
+                               value="FIIPS">FIIPS
+                        <input type="radio" name="fakultas"
+                               value="FBS">FBS
+                        <input type="radio" name="fakultas"
+                               value="PASCA-SARJANA">PASCA-SARJANA
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Program Studi</td>
+                    <td>:</td>
+                    <td>
+                        <select name="prodi" required>
+                            <option value="">-- Pilih Program Studi --</option>
+                            <option value="informatika">Teknik Informatika</option>
+                            <option value="teknik-industri">Teknik Industri</option>
+                            <option value="pendidikan-biologi">Pendidikan Biologi</option>
+                            <option value="pendidikan-matematika">Pendidikan Matematika</option>
+                            <option value="pendidikan-fisika">Pendidikan Fisika</option>
+                            <option value="pendidikan-ekonomi">Pendidikan Ekonomi</option>
+                            <option value="pendidikan-sejarah">Pendidikan Sejarah</option>
+                            <option value="pendidikan-bahasa-indonesia">Pendidikan Bahasa Indonesia</option>
+                            <option value="pendidikan-bahasa-inggris">Pendidikan Bahasa Inggris</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <!-- KATEGORI BUKU -->
+            <p><b>Kategori Buku:</b></p>
+
+            <input type="checkbox" name="kategori"
+                   value="pendidikan">Pendidikan<br>
+
+            <input type="checkbox" name="kategori"
+                   value="ilmu-sosial">Ilmu Sosial<br>
+
+            <input type="checkbox" name="kategori"
+                   value="ilmu-alam">Ilmu Alam<br>
+
+            <input type="checkbox" name="kategori"
+                   value="agama">Agama<br>
+
+            <input type="checkbox" name="kategori"
+                   value="budaya">Budaya<br>
+
+            <input type="checkbox" name="kategori"
+                   value="matematika-sains">Matematika & Sains<br>
+
+            <br>
+
+            <!-- TOMBOL -->
+            <div align="center">
+                <button type="submit">Daftar</button>
+                <button type="reset">Muat Ulang</button>
+            </div>
+        </form>
+
+    </fieldset>
+
+</body>
+</html>

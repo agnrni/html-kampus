@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Donasi Online</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 30px;">
+
+    <!-- Gambar/Logo -->
+    <img src="logo-donasi.jpg" alt="Logo Donasi" width="70" height="70">
+    
+    <h2>Formulir Donasi Online</h2>
+
+    <div style="background-color: #ffeb3b; padding: 10px; width: 60%; margin: 0 auto 20px auto; font-weight: bold; font-size: 14px;">
+        Terima kasih telah berdonasi! Setiap kontribusi Anda sangat berarti.
+    </div>
+
+    <form action="#" method="post">
+        <table align="center" cellpadding="8" style="text-align: left;">
+            <tr>
+                <td><label for="nama"><b>Nama Lengkap:</b></label></td>
+                <td><input type="text" id="nama" name="nama" size="35" required style="padding: 5px; border: 1px solid #ccc;"></td>
+            </tr>
+            <tr>
+                <td><label for="email"><b>Email:</b></label></td>
+                <td><input type="email" id="email" name="email" size="35" required style="padding: 5px; border: 1px solid #ccc;"></td>
+            </tr>
+            <tr>
+                <td><label for="telepon"><b>Nomor Telepon:</b></label></td>
+                <td><input type="tel" id="telepon" name="telepon" size="35" required style="padding: 5px; border: 1px solid #ccc;"></td>
+            </tr>
+            <tr>
+                <td><label for="jumlah"><b>Jumlah Donasi:</b></label></td>
+                <td><input type="number" id="jumlah" name="jumlah" style="padding: 5px; border: 1px solid #ccc; width: 95%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="metode"><b>Metode Pembayaran:</b></label></td>
+                <td>
+                    <select id="metode" name="metode" style="padding: 5px; width: 100%; border: 1px solid #ccc;">
+                        <option value="transfer">Transfer Bank</option>
+                        <option value="ewallet">E-Wallet (GoPay/OVO/Dana)</option>
+                        <option value="qris">QRIS</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" style="padding-top: 15px;">
+                    <button type="submit" style="background-color: #f7d23e; color: #d32f2f; font-weight: bold; padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer;">
+                        Donasi Sekarang
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
